@@ -1,0 +1,251 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	
+}
+img{ border:0;}
+
+input,textarea:focus {outline: none;}
+
+*{margin:0; padding:0; list-style:none; }
+.img-responsive{ width:100%;}
+/**
+* 中文小于 12px 可读性很差
+* 1. 统一 IE 6-7 中字体大小
+* 2. 统一 Firefox 4+，Safari 5 和 Chrome 中「section」和「article」内的字体大小
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size:30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 20px;
+}
+/* 清除浮 动*/
+.fix {
+    *zoom: 1;
+}
+.fix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+
+
+/************定位***********/
+.po-r{ position: relative;}
+.po-a{ position: absolute;}
+.po-f{ position: fixed;}
+
+
+/************左右浮动***********/
+.fl { float: left; }
+.fr { float: right; }
+
+/*
+*@ Name:CSS 三角形组件*/
+.arrow {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: -2px;
+  border: 0 dashed transparent;
+  border-width: 12px;
+}
+
+.arrow-top {
+  border-bottom-style: solid;
+  border-bottom-color: #2ab2df;
+}
+
+.arrow-bottom {
+  border-top-style: solid;
+  border-top-color: #2ab2df;
+}
+
+.arrow-left {
+  border-right-style: solid;
+  border-right-color: rgba(32, 147, 231, 1);
+}
+
+.arrow-right {
+  border-left-style: solid;
+  border-left-color: rgba(255,255,255,1);
+}
+
+/* ◤左上角 */
+.arrow-left-top {
+  border-top-style: solid;
+  border-top-color: #2ab2df;
+  border-left-width: 0 !important;
+}
+
+/* ◥右上角 */
+.arrow-right-top {
+  border-top-style: solid;
+  border-top-color: #2ab2df;
+  border-right-width: 0 !important;
+}
+
+/* ◣左下角 */
+.arrow-left-bottom {
+  border-bottom-style: solid;
+  border-bottom-color: #2ab2df;
+  border-left-width: 0 !important;
+}
+
+/* ◢右下角 */
+.arrow-right-bottom {
+  border-bottom-style: solid;
+  border-bottom-color: #2ab2df;
+  border-right-width: 0 !important;
+}
+
+/* for html5 all transition */
+*:link, *:visited, *:hover, *:active, *:focus{
+-webkit-transition:color .25s linear,background-color .25s linear,border-color .25s linear;
+transition:color .25s linear,background-color .25s linear,border-color .25s linear;}
+
+/**************宽度**************/
+.w-100p{ width: 100%;}
+.w-95p{ width: 95%;}
+.w-90p{ width: 90%;}
+.w-85p{ width: 85%;}
+.w-80p{ width: 80%;}
+.w-75p{ width: 75%;}
+.w-70p{ width: 70%;}
+.w-65p{ width: 65%;}
+.w-60p{ width: 60%;}
+.w-55p{ width: 55%;}
+.w-50p{ width: 50%;}
+.w-45p{ width: 45%;}
+.w-40p{ width: 40%;}
+.w-35p{ width: 35%;}
+.w-33p{ width: 33.33%;}
+.w-30p{ width: 30%;}
+.w-25p{ width: 25%;}
+.w-20p{ width: 20%;}
+.w-15p{ width: 15%;}
+.w-10p{ width: 10%;}
+.w-5p{ width: 5%;}
+
+/*********栅格**********/
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; }
+.col-12 { width: 100%; }
+.col-11 { width: 91.66666667%; }
+.col-10 { width: 83.33333333%; }
+.col-9 { width: 75%; }
+.col-8 { width: 66.66666667%; }
+.col-7 { width: 58.33333333%; }
+.col-6 { width: 50%; }
+.col-5 { width: 41.66666667%; }
+.col-4 { width: 33.33333333%; }
+.col-3 { width: 25%; }
+.col-2 { width: 16.66666667%; }
+.col-1 { width: 8.33333333%; }
+
+/*# sourceMappingURL=cube.css.map */
+
+/*首页红包弹出*/
+.hide{opacity:0;}
+.hb-box{ position:fixed; top:15%; left:50%; margin-left:-300px; width:600px;z-index:1002; text-align:center;}
+.hb-bei{ position:fixed; top:0; left:0; width:100%; height:100%; background-color:black; z-index:1001; -moz-opacity:0.8; opacity:.80; filter:alpha(opacity=88); }
+.draw-gift .draw-img{ width:100%; position:relative;}
+.draw-gift .draw-img .draw-down{width:538px; height:637px; background-image:url(http://xtglobal.oss-cn-shenzhen.aliyuncs.com/images/global/hb.png); margin:0 auto; position:absolute; left:50%; top:0; margin-left:-269px;}
+.draw-gift .draw-img .draw-down2{ background:url(http://xtglobal.oss-cn-shenzhen.aliyuncs.com/images/global/dkhb.png) no-repeat; width:590px; height:658px; margin:0 auto; position:absolute; left:50%; top:0; z-index:10; margin-left:-295px;}
+.draw-gift .draw-img .draw-mid{position:absolute; width:144px; height:148px; background:url(http://xtglobal.oss-cn-shenzhen.aliyuncs.com/images/global/ling.png) no-repeat; left:50%; margin-left:-72px;top:395px; z-index: 100; top: animation: open 0.3s linear 1s 3 alternate;}
+.draw-gift .draw-img .draw-list2{ background:url(http://xtglobal.oss-cn-shenzhen.aliyuncs.com/images/global/dkhb2.png) no-repeat; left:50%; z-index:12; width:500px; height:366px;opacity:0; position:absolute; margin-left:-256px; margin-top:300px;}
+.draw-gift .draw-img .draw-list2 .cun-ru{width:330px; height:75px; background:rgba(253,206,140,1); border-radius:38px; display:block; margin:0 auto; margin-top:130px;font-size:34px;color:rgba(231,0,58,1); text-align:center; line-height:75px;}
+
+.draw-gift .draw-img .draw-mid-move{-webkit-animation: open 0.2s linear 0.5s infinite alternate;-webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);animation: open 0.2s linear 0.5s infinite alternate;animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);}
+.draw-gift .draw-img .draw-list {background:url(http://xtglobal.oss-cn-shenzhen.aliyuncs.com/images/global/hbq.png) no-repeat; width:430px; height:348px; position:absolute; left:50%; margin-left:-222px;top: 3.5rem;opacity: 0;z-index:11; margin-top:230px; padding:20px;}
+.draw-gift .draw-img .draw-list h4{ color:#fe2540; font-size:38px; line-height:45px;}
+.draw-gift .draw-img .draw-list p{ color:#fe2540; font-size:26px; padding:8px 0px;}
+.draw-gift .draw-img .draw-list p span{ font-size:65px; font-weight:bold;}
+.hb-guan{ position:fixed; left:50%; margin-left:-40px; bottom:10%;}
+@-webkit-keyframes draw-down {
+	0%{opacity:1;}
+	50%{opacity:0.5;}
+	100%{opacity:0;}
+}
+@-webkit-keyframes draw-down2 {
+	0% {opacity:0;}
+	50%{opacity:0.5;}
+	100%{opacity:1;}
+}
+
+@keyframes open {
+	0%{transform: scale(1);}
+	100%{transform: scale(0.9);}
+}
+@-webkit-keyframes open {
+	0%{-webkit-transform: scale(1);}
+	100%{-webkit-transform: scale(0.9);}
+}
+/*首页红包弹出***end*/
